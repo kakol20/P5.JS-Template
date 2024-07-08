@@ -3,5 +3,9 @@ const DOMManager = (function () {
     preload() {
 
     },
+
+    setup() {
+      
+    }
   }
 })()

@@ -7,11 +7,12 @@ const MainManager = (function () {
     },
 
     setup() {
-      pixelDensity(1);
+      // pixelDensity(1);
 
       this.canvas = createCanvas(windowWidth, windowHeight);
       this.canvas.position(0, 0);
 
+      DOMManager.setup();
       ProcessManager.setup();
     },
 
