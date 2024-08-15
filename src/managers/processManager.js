@@ -1,27 +1,27 @@
 const ProcessManager = (function () {
-  let state = 'nothing';
+	let state = 'nothing';
 
-  const maxFPS = 60;
+	const maxFPS = 60;
 
-  const debugStates = true;
+	const debugStates = true;
 
-  return {
-    changeState(s) {
-      state = s;
+	return {
+		changeState(s) {
+			state = s;
 
-      if (debugStates) console.log('State Change: ' + s);
-    },
+			if (debugStates) console.log('State Change: ' + s);
+		},
 
-    setup() {
+		setup() {
 
-    },
+		},
 
-    draw(dt) {
-      switch (state) {
-        default:
-          // do nothing
-          break;
-      }
-    }
-  }
+		draw(dt) {
+			switch (state) {
+				default:
+					// do nothing
+					break;
+			}
+		}
+	}
 })()

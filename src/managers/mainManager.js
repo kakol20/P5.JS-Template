@@ -1,23 +1,23 @@
 const MainManager = (function () {
-  return {
-    canvas: 0,
+	return {
+		canvas: 0,
 
-    preload() {
-      DOMManager.preload();
-    },
+		preload() {
+			DOMManager.preload();
+		},
 
-    setup() {
-      // pixelDensity(1);
+		setup() {
+			// pixelDensity(1);
 
-      this.canvas = createCanvas(windowWidth, windowHeight);
-      this.canvas.position(0, 0);
+			this.canvas = createCanvas(windowWidth, windowHeight);
+			this.canvas.position(0, 0);
 
-      DOMManager.setup();
-      ProcessManager.setup();
-    },
+			DOMManager.setup();
+			ProcessManager.setup();
+		},
 
-    draw(dt) {
-      ProcessManager.draw(dt);
-    }
-  }
+		draw(dt) {
+			ProcessManager.draw(dt);
+		}
+	}
 })();
